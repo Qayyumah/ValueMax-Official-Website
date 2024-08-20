@@ -1,0 +1,55 @@
+.portfolio{
+    margin-bottom: 100px;
+    padding: 120px;
+
+    @media (max-width: 1024px){
+        padding: 40px;
+    }
+
+    @media(max-width:376px){
+        padding: 20px;
+    }
+}
+.port-head{
+    text-align: center;
+}
+.port-head h3{
+    font-size: 30px;
+    color: #182040;
+}
+.port-head p{
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+.port-links{
+    padding: 100px 0px;
+    margin: auto;
+    text-align: center;
+    visibility: hidden;
+}
+.port-links h3{
+    color: #f2b636;
+    margin-bottom: 0;
+}
+.port-links a{
+    text-decoration-line: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-top: 0;
+}
+
+.site1:hover{
+    background-color: #f2b636;
+    .port-links{
+        background-color: #182040 ;
+        min-height: 100%;
+        opacity: .9;
+        visibility: visible;
+    }
+}
+.site1{
+    width: 100%;
+    height: 300px;
+}
