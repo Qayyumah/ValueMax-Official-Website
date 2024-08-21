@@ -21,7 +21,6 @@ const Portfolio = () => {
                 breakpoint: 1200,
                 settings:{
                     slidesToShow: 4,
-                    slidesToScroll: 1,
                 },
             },
             {
@@ -40,8 +39,6 @@ const Portfolio = () => {
                 breakpoint: 480,
                 settings:{
                     slidesToShow: 1,
-                    slidesToScroll: 1,
-                    imageWidth: 8000,
                 },
             }
         ]
@@ -231,15 +228,17 @@ const Carousel = styled(Slider)`
     ul li button{
         &:before{
             visibility: hidden;
+            display: none;
         }
     }
 
     li.slick-active button:before{
         color: white;
-        
+        display: none;
     }
     button{
         z-index: 1;
+        display: none;
     }
 
     .slick-dots li button{
@@ -262,17 +261,11 @@ const Carousel = styled(Slider)`
 
 .slick-prev{
     margin-left: -60px;
-
-    /* @media (max-width:600px){
-        margin-left: 30px;
-    } */
+    visibility: hidden;
 }
 .slick-next{
-    margin-right: -40px;
-
-    /* @media (max-width:600px){
-        margin-right: 70px;
-    } */
+    margin-right: 70px;
+    visibility: hidden;
 }
 
 .slick-prev::before{
@@ -331,5 +324,5 @@ const Carousel = styled(Slider)`
     @media(max-width: 1024px){
         display: none;
     }
-}
+} 
 `

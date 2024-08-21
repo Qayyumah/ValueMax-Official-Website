@@ -734,9 +734,10 @@
 }
 
 .why-grid{
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 50px;
     text-align: center;
     padding-bottom: 50px;
 
