@@ -260,12 +260,20 @@ const Carousel = styled(Slider)`
     }
 
 .slick-prev{
-    margin-left: -60px;
-    visibility: hidden;
+    margin-left: -50px;
+
+    @media (max-width:1024px){
+        margin-right: -60px;
+        visibility: hidden;
+    }
 }
 .slick-next{
-    margin-right: 70px;
-    visibility: hidden;
+    margin-right: -30px;
+    @media (max-width:1024px){
+        margin-right: 70px;
+        visibility: hidden;
+    }
+
 }
 
 .slick-prev::before{

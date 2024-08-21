@@ -695,9 +695,6 @@
     @media(max-width:600px){
         padding: 20px;
     }
-    @media(max-width:321px){
-        padding: ;
-    }
 }
 .vision h1{
     color: #f2b636;
