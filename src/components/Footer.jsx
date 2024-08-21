@@ -45,7 +45,7 @@ const Footer = () => {
             </div>
 
             <div className='Footer'>
-                <p>@ValueMaxCodeLab 2007</p>
+                <p>©ValueMaxCodeLab 2007</p>
             </div>
         </div>
     </div>
