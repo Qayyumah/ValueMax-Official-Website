@@ -430,7 +430,7 @@
     text-align: center;
 }
 .Services h3{
-    color: #f2b636;
+    color: #fff;
     font-size: 30px;
     text-align: center;
 }
@@ -486,11 +486,13 @@
     margin-top: 20px;
     font-weight: 600;
     text-align: left;
+    color: #f2b636;
 
     @media (max-width:800px){
         font-size: 1.30rem;
     }
 }
+
 .box p{
     text-align: left;
     font-weight: 400;
@@ -632,13 +634,16 @@
     }
 }
 .mission{
-    background-color: #182141;
+    background-color: #f2b636;
     height: 400px;
     margin: 0 auto;
     padding: 120px;
 
-    @media (max-width:600px){
+    @media (max-width:1024px){
         /* padding: 60px; */
+        padding: 20px;
+    }
+    @media(max-width:600px){
         padding: 10px;
     }
 
@@ -650,7 +655,7 @@
     margin-top: 40px;
 }
 .mission h1{
-    color: #f2b636;
+    color: #182141;
     font-size: 45px;
     line-height: 1.44em;
     letter-spacing: 2px;
@@ -672,31 +677,31 @@
     }
 }
 .vision{
-    background-color: #f2b636;
+    background-color: #182141;
     height: 400px;
     margin: 0 auto;
     padding: 120px;
     color: #fff;
 
-    @media (max-width:600px){
-        /* padding: 60px;   */
-        /* min-width: 465px; */
+    @media (max-width:1024px){
         padding: 20px;
     }
-
+    @media(max-width:600px){
+        padding: 20px;
+    }
 }
 .vision h1{
-    color: #182141;
+    color: #f2b636;
     font-size: 48px;
     /* line-height: 1.44em; */
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 400;
     margin-bottom: 0;
     margin-top: 0;
 }
 .vision p{
     line-height: 1.67em;
-    font-size: 20px;
+    font-size: 18px;
     color: #d6d6d6;
 }
 .vision h4{
@@ -713,6 +718,7 @@
 .why{
     padding: 120px;
     text-align: center;
+    margin-bottom: 30px;
 
     @media (max-width:800px){
         padding: 30px;
@@ -744,6 +750,7 @@
     color: #182141;
     font-weight: 500;
     margin-bottom: 0;
+    margin-top: 10px;
 }
 .why-grid p{
     text-align: left;
@@ -755,6 +762,10 @@
         font-size: 18px;
         width: 100%;
     }
+}
+.box-column img{
+    width: 20%;
+    margin-bottom: 0;
 }
 .contact-btn a{
     border: 2px solid #f2b636;
@@ -809,8 +820,8 @@
 }
 .products-grid .product-box h6{
     color: #000;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 18px;
     margin-bottom: 10px;
 
 }
@@ -857,6 +868,71 @@
     transition: all 1s;
 }
 
+/*new-project*/
+
+.new-project{
+    background-color: #f2b636;
+    background-image: url('tech.jpg');
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 120px;
+    /* margin-bottom: 50px; */
+
+    @media (max-width:800px){
+        padding: 30px 60px;
+    }
+    @media(max-width:480px){
+        padding: 20px;
+    }
+}
+.new-project p{
+    color: #fff;
+    font-size: 36px;
+    letter-spacing: 2px;
+    font-weight: 600;
+
+    @media (max-width:800px){
+        font-size: 28px;
+    }
+    @media(max-width: 480px){
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+}
+.new-project a{
+    
+    text-decoration-line: none;
+    padding: 22px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 2px solid #f2b636;
+
+    @media (max-width:800px){
+        padding: 15px 20px;
+    }
+
+    @media (max-width:560px){
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    @media (max-width:376px){
+        padding: 10px 5px;
+        font-size: 11px;
+    }
+   
+}
+.new-project a:hover{
+    opacity: .9;
+    color: #fff;
+    background-color: #f2b636;
+}
 
 
 

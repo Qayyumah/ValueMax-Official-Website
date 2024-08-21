@@ -1,25 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-import Slider from 'react-slick'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css"; 
 import { Link } from 'react-router-dom';
+import '../Assets/feedback.css'
 
 const Feedback = () => {
-    let settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        // autoplay: true,
-    }
+
   return (
     <div>
         <div className='feedbacks'>
             <h3>WHAT OUR CLIENTS SAY</h3>
         </div>
-        <Carousel {...settings}>
             <div className='clients-feedback-box'>
                 <div className='clients-feedback'>
                     <h1>Rafiu Adeniran Lawal</h1>
@@ -49,123 +39,24 @@ const Feedback = () => {
                     service
                     delivery, prompt working crew and superb training packages. I can testify that
                     valuemax is really valuable. </p>
-                    <h6><span class="client-designation txt_colo font-weight-bold" style="color:#f2b636;">Senior
+                    <h6><span>Senior
                     Pastor; Prayer Life Bible Church </span></h6>
                 </div>
+
+                <div className='clients-feedback'>
+                    <h1>AYODELE S. LARAIYETAN</h1>
+                    <p>ValueMax has helped us with the best by redesigning our website.
+                    They not only reduced its loading time by implementing the right
+                    technology, but also ensured that it is attractive and easy-to-use.
+                    atahey have satisfied my company to the fullest by delivering the 
+                    exceptional solutions. ValueMax have great expertise, are dedicated, attentive, talented and care much
+                    about the client's needs and are always available to answer my questions and provide feedback.</p>
+                    <h6>CEO; Ayogif General Merchant Chandling Services Ltd.</h6>
+                </div>
             </div>
-        </Carousel>
     </div>
   )
 }
 
 export default Feedback
 
-const Carousel = styled(Slider)`
-    padding: 50px 0px;
-    cursor: pointer;
-
-    ul li button{
-        &:before{
-            visibility: hidden;
-        }
-    }
-
-    li.slick-active button:before{
-        color: white;
-        
-    }
-    button{
-        z-index: 1;
-    }
-
-    .slick-dots li button{
-        border:  2px solid grey;
-        border-radius: 50%;
-        width: 12px;
-        height: 12px;
-        z-index: 1;
-        font-weight: 400;
-        background-color: white;
-    }
-    .slick-dots li.slick-active button{
-        background-color: white;
-        border-color: orange;
-        color: #fff;
-    }
-    .slick-dots li button:hover{
-        border-color: #f2b636;
-    }
-
-.slick-prev{
-    margin-left: -60px;
-
-    @media (max-width:600px){
-        margin-left: 30px;
-    }
-}
-.slick-next{
-    margin-right: -40px;
-
-    @media (max-width:600px){
-        margin-right: 70px;
-    }
-}
-
-.slick-prev::before{
-    content: '';
-    position : absolute;
-    top: -30%;
-    width: 1.5rem;
-    height: 3px;
-    transform: rotate(-45deg);
-    background-color: #000;
-    transition: all 0.2s;
-
-    @media(max-width: 1024px){
-        display: none;
-    }
-}
-.slick-prev::after {
-    content: '';
-    top: 50%;
-    position : absolute;
-    width: 1.5rem;
-    height: 3px;
-    transform: rotate(45deg);
-    background-color: #000;
-    transition: all 0.2s;
-    
-    @media(max-width: 1024px){
-        display: none;
-    }
-}
-.slick-next::before{
-    content: '';
-    position : absolute;
-    top: -30%;
-    width: 1.5rem;
-    height: 3px;
-    transform: rotate(45deg);
-    background-color: #000;
-    transition: all 0.2s;
-
-    @media(max-width: 1024px){
-        display: none;
-    }
-}
-
-.slick-next::after {
-    content: '';
-    top: 50%;
-    position : absolute;
-    width: 1.5rem;
-    height: 3px;
-    transform: rotate(-45deg);
-    background-color: #000;
-    transition: all 0.2s;
-
-    @media(max-width: 1024px){
-        display: none;
-    }
-}
-`

@@ -12,6 +12,7 @@ import CloseIcon from '@material-ui/icons/Close'
 import Portfolio from './Portfolio'
 import Feedback from './Feedback'
 import Fade, { Zoom }  from 'react-reveal'
+import Footer from './Footer'
 
 const Home = () => {
     const [burgerStatus, setBurgerStatus] = useState(false)
@@ -274,7 +275,6 @@ const Home = () => {
             <div className='how'>
                 <h3>How We Do It</h3>
                 <div className='how-grid'>
-
                     <Fade bottom>
                         <Fade left>
                             <div className='boxs'>
@@ -353,33 +353,43 @@ const Home = () => {
 
             <div className='why'>
             <h3>WHY VALUEMAX</h3>
-                <div className='why-grid'>
-                    <div className='box-column'>
-                        <img src=''/>
-                        <h6>Professionalism</h6>
-                        <p>
-                            Not only are we professionals, we make sure we relate and respect our clients irrespective of their status, we treat every customer as a family, 
-                            everyone is important and a key part of the company.
-                        </p>
+                <Zoom>
+                    <div className='why-grid'>
+                        <Fade bottom>
+                            <div className='box-column'>
+                                <img src='images/targeting.png'/>
+                                <h6>Professionalism</h6>
+                                <p>
+                                    Not only are we professionals, we make sure we relate and respect our clients irrespective of their status, we treat every customer as a family, 
+                                    everyone is important and a key part of the company.
+                                </p>
+                            </div>
+                        </Fade>
+
+                        <Fade top>
+                            <div className='box-column'>
+                                <img src='images/24-hours-support.png'/>
+                                <h6>Customer's Oriented</h6>
+                                <p>
+                                    We are dedicated to providing our clients with the quality of service that they deserve. We listen to our clients’ needs, and in return develop ethical, 
+                                    smart and tailored solutions that fulfil their long-term goals.
+                                </p>
+                            </div>
+                        </Fade>
+
+                        <Fade bottom>
+                            <div className='box-column'>
+                                <img src='images/expertise.png'/>
+                                <h6>Experience</h6>
+                                <p>
+                                    Our team of specialists is something 
+                                    that makes us extremely proud and self-confident; our approach is collaborative, 
+                                    scientific and customized to meet customers satisfaction
+                                </p>
+                            </div>
+                        </Fade>
                     </div>
-                    <div className='box-column'>
-                        <img src=''/>
-                        <h6>Customer's Oriented</h6>
-                        <p>
-                            We are dedicated to providing our clients with the quality of service that they deserve. We listen to our clients’ needs, and in return develop ethical, 
-                            smart and tailored solutions that fulfil their long-term goals.
-                        </p>
-                    </div>
-                    <div className='box-column'>
-                        <img src=''/>
-                        <h6>Experience</h6>
-                        <p>
-                            Our team of specialists is something 
-                            that makes us extremely proud and self-confident; our approach is collaborative, 
-                            scientific and customized to meet customers satisfaction
-                        </p>
-                    </div>
-                </div>
+                </Zoom>
                 <div className='contact-btn'>
                     <Link to="/contact">Contact Us</Link>
                 </div>
@@ -430,6 +440,13 @@ const Home = () => {
             </div>
             
             <Portfolio/>
+
+            <div className='new-project'>
+                <p>Start a new Project?</p>
+                <Link to='/contact'>Get Started</Link>
+            </div>
+
+            <Footer/>
         </div>
     </div>
   )
