@@ -10,6 +10,8 @@ import { Link } from 'react-router-dom'
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
 import Portfolio from './Portfolio'
+import Feedback from './Feedback'
+import Fade, { Zoom }  from 'react-reveal'
 
 const Home = () => {
     const [burgerStatus, setBurgerStatus] = useState(false)
@@ -53,6 +55,7 @@ const Home = () => {
                             </div>
                             <CustomClose onClick={()=>setBurgerStatus(false)}/>
                         </CloseWrapper>
+                        <Fade>
                         <Nav>
                             <Link to='/'>Home</Link>
                             <Link to='/about'>About us</Link>
@@ -63,6 +66,7 @@ const Home = () => {
                             <Link to='/blog'>Blog</Link>
                             <Link to='/contact'>Contact</Link>
                         </Nav>
+                        </Fade>
                     </BurgerNav>
                 </div>
             </div>
@@ -138,146 +142,194 @@ const Home = () => {
             </div>
 
             <div className='About'>
-                <div className='about-text'>
-                    <h1>Welcome to ValueMax Communications</h1>
-                    <p>Valuemax is a fast growing Software development company with special
-                    interest in providing solutions that specific local ICT needs in Nigeria 
-                    and Africa continent by extension. Currently we focus on web application
-                    development, business/organization website design, mobile App development, 
-                    Training and human Resource Development</p>
-                    <p>With more than a decade experience in the industry, we provide cutting edge/mobile technology
-                    services at most competitive price in the market.</p>
-                    <div className='btns'>
-                        <Link to='/about'>More about us</Link>   
-                    </div>         
-                </div>
-                <div className='about-image'>
-                    <img src='images/about1.png' alt=''/>
-                </div>
+                <Fade right>
+                    <div className='about-text'>
+                        <h1>Welcome to ValueMax Communications</h1>
+                        <p>Valuemax is a fast growing Software development company with special
+                        interest in providing solutions that specific local ICT needs in Nigeria 
+                        and Africa continent by extension. Currently we focus on web application
+                        development, business/organization website design, mobile App development, 
+                        Training and human Resource Development</p>
+                        <p>With more than a decade experience in the industry, we provide cutting edge/mobile technology
+                        services at most competitive price in the market.</p>
+                        <Fade bottom>
+                            <div className='btns'>
+                                <Link to='/about'>More about us</Link>   
+                            </div>   
+                        </Fade>      
+                    </div>
+                </Fade>
+
+                <Fade left>
+                    <div className='about-image'>
+                        <img src='images/Vector01.png' alt=''/>
+                    </div>
+                </Fade>
             </div> 
             
         
             <div className='Services'>
                     <h3>What We Do</h3>
-                <div className='services-grid'>
-                    <div className='box'>
-                        <img src='images/webmobile.png'/>
-                        <h6>Innovation Hub</h6>
-                        <p>
-                            Whether you need a simple static 
-                            business website or a massive customized 
-                            web application/portal/e-commerce system/business mobile app, Valuemax is here to give you the best at pocket friendly price.
-                        </p>
+                <Fade bottom>
+                    <div className='services-grid'>
+                        <div className='box'>
+                            <img src='images/webmobile.png'/>
+
+                            <div className='text-box'>
+                                <h6>Innovation Hub</h6>
+                                <p>
+                                    Whether you need a simple static 
+                                    business website or a massive customized 
+                                    web application/portal/e-commerce system/business mobile app, Valuemax is here to give you the best at pocket friendly price.
+                                </p>
+                            </div>    
+                        </div>
+                        <Fade left>
+                        <div className='box'>
+                            <img src='images/domain.png'/>
+
+                            <div className='text-box'>
+                                <h6>Domain & Hosting</h6>
+                                <p>
+                                    As web agency, we believe nothing 
+                                    but blazing fast-loading website, blog, 
+                                    and web application. And that is exact 
+                                    experience we promise you when 
+                                    you host with us at Valuemax.
+                                </p>
+                            </div>
+                        </div>
+                        </Fade>
+                        <div className='box'>
+                            <img src='images/marketing2.png'/>
+
+                            <div className='text-box'>
+                                <h6>Data Management</h6>
+                                <p> 
+                                    we exercise a unique online
+                                    marketing strategy that provide innovative, 
+                                    creative solutions for emerging brands 
+                                    and well-established companies. We specialize in helping both business-to-consumer and 
+                                    business-to-business clients gain attention.
+                                </p>
+                            </div>
+                        </div>
+
+                        <Fade right>
+                        <div className='box'>
+                            <img src='images/placement.png'/>
+
+                            <div className='text-box'>
+                            <h6>Tech Academy</h6>
+                                <p>
+                                    Get 100% practical experience! 
+                                    we offer training that is personalized 
+                                    to suit your learning style, valuemax is 
+                                    here to suggests the best course
+                                    which suits & promotes your career.
+                                </p>
+                            </div>
+                        </div>
+                        </Fade>
+                        <div className='box'>
+                            <img src='images/Branding.png'/>
+
+                            <div className='text-box'>
+                                <h6>Branding & Advertisement</h6>
+                                <p>
+                                    We offer a complete collection of 
+                                    graphic design services to showcase 
+                                    your identity. Working with our talented
+                                    designers who ably translate your thoughts and ideas 
+                                    into creative graphic designs.
+                                </p>
+                            </div>
+                        </div>
+                        <Fade left>
+                            <div className='box'>
+                                <img src='images/online.png'/>
+
+                                <div className='text-box'>
+                                    <h6>Online Services</h6>
+                                    <p>
+                                        We provide a variety of online 
+                                        services ranging from registrations, 
+                                        payments of electricity bills, DSTV, 
+                                        GOTV & STARTIMES subscription and every 
+                                        other internet engagement service.
+                                    </p>
+                                </div>
+                            </div>
+                        </Fade>
                     </div>
-                    <div className='box'>
-                        <img src='images/domain.png'/>
-                        <h6>Domain & Hosting</h6>
-                        <p>
-                            As web agency, we believe nothing 
-                            but blazing fast-loading website, blog, 
-                            and web application. And that is exact 
-                            experience we promise you when 
-                            you host with us at Valuemax.
-                        </p>
-                    </div>
-                    <div className='box'>
-                        <img src='images/marketing2.png'/>
-                        <h6>Data Management</h6>
-                        <p> 
-                            we exercise a unique online
-                            marketing strategy that provide innovative, 
-                            creative solutions for emerging brands 
-                            and well-established companies. We specialize in helping both business-to-consumer and 
-                            business-to-business clients gain attention.
-                        </p>
-                    </div>
-                    <div className='box'>
-                        <img src='images/placement.png'/>
-                        <h6>Tech Academy</h6>
-                        <p>
-                            Get 100% practical experience! 
-                            we offer training that is personalized 
-                            to suit your learning style, valuemax is 
-                            here to suggests the best course
-                            which suits & promotes your career.
-                        </p>
-                    </div>
-                    <div className='box'>
-                        <img src='images/Branding.png'/>
-                        <h6>Branding & Advertisement</h6>
-                        <p>
-                            We offer a complete collection of 
-                            graphic design services to showcase 
-                            your identity. Working with our talented
-                            designers who ably translate your thoughts and ideas 
-                            into creative graphic designs.
-                        </p>
-                    </div>
-                    <div className='box'>
-                        <img src='images/online.png'/>
-                        <h6>Online Services</h6>
-                        <p>
-                            We provide a variety of online 
-                            services ranging from registrations, 
-                            payments of electricity bills, DSTV, 
-                            GOTV & STARTIMES subscription and every 
-                            other internet engagement service.
-                        </p>
-                    </div>
-                </div>
+                </Fade>
+
+                <Fade top>
                 <div className='btn'>
                     <Link to="/contact">Get A Quote</Link>
                 </div>
+                </Fade>
             </div>
 
             <div className='how'>
                 <h3>How We Do It</h3>
                 <div className='how-grid'>
-                    <div className='boxs'>
-                        <img src='images/Discuss.png'/>
-                        <h6>Discuss your Idea with us</h6>
-                        <p>
-                            Give us a clear explanation (with all functional details) of what you want your app/website to look like. 
-                            This is a critical project-initiation stage that must be thoroughly worked by both the client (you) and members of our team
-                        </p>
-                    </div>
 
-                    <div className='boxs'>
-                        <img src='images/download.svg'/>
-                        <h6>Proposal Presentation</h6>
-                        <p>
-                            Based on the explanation received, our team brainstorm on the best technology that will get the job done, the approach to adopt, draw a wireframe, 
-                            the cost implication and the time frame for deliverable(s). All these are documented
-                        </p>
-                    </div>
+                    <Fade bottom>
+                        <Fade left>
+                            <div className='boxs'>
+                                <img src='images/Discuss.png'/>
+                                <h6>Discuss your Idea with us</h6>
+                                <p>
+                                    Give us a clear explanation (with all functional details) of what you want your app/website to look like. 
+                                    This is a critical project-initiation stage that must be thoroughly worked by both the client (you) and members of our team
+                                </p>
+                            </div>
+                        </Fade>
 
-                    <div className='boxs'>
-                        <img src='images/Project.png'/>
-                        <h6>Project Execution</h6>
-                        <p>
-                            At this stage, our team build /implement, deploy / install and thoroughly test alongside the client and effect necessary corrections 
-                            based on the initial agreement. corrections based on the initial agreement. corrections based
-                        </p>
-                    </div>
+                        <div className='boxs'>
+                            <img src='images/download.svg'/>
+                            <h6>Proposal Presentation</h6>
+                            <p>
+                                Based on the explanation received, our team brainstorm on the best technology that will get the job done, the approach to adopt, draw a wireframe, 
+                                the cost implication and the time frame for deliverable(s). All these are documented
+                            </p>
+                        </div>
+                    </Fade>
 
-                    <div className='boxs'>
-                        <img src='images/monitoring.png'/>
-                        <h6>Monitoring and Correction</h6>
-                        <p>
-                            At valuemax, We offer 6months after development monitoring service (within the ambit of the detail in MOU) at no cost whatsoever to our client to 
-                            ensure the system is stable, servicing its purpose and optima system performance.
-                        </p>
-                    </div>
+                    <Fade top>
+                        <Fade right>
+                            <div className='boxs'>
+                                <img src='images/Project.png'/>
+                                <h6>Project Execution</h6>
+                                <p>
+                                    At this stage, our team build /implement, deploy / install and thoroughly test alongside the client and effect necessary corrections 
+                                    based on the initial agreement. corrections based on the initial agreement. corrections based
+                                </p>
+                            </div>
+                        </Fade>
+
+                        <div className='boxs'>
+                            <img src='images/monitoring.png'/>
+                            <h6>Monitoring and Correction</h6>
+                            <p>
+                                At valuemax, We offer 6months after development monitoring service (within the ambit of the detail in MOU) at no cost whatsoever to our client to 
+                                ensure the system is stable, servicing its purpose and optima system performance.
+                            </p>
+                        </div>
+                    </Fade>
                 </div>
-                <div className='manage'>
-                    <img src=''/>
-                    <h2>Website Management</h2>
-                    <p>
-                    When it comes to web management, we offer a flexible package. 
-                    The client can be trained to manage the website in-house on their own or the management can be contracted to us as an agency at a pocket friendly amount. In both instance, we give you eery support you need all the way to make sure your web or app is functioning optimally and serving 
-                    the purpose to which it was developed in the first place.
-                    </p>
-                </div>
+                <Zoom>
+                    <div className='manage'>
+                        <img src=''/>
+                        <h2>Website Management</h2>
+                        <p>
+                        When it comes to web management, we offer a flexible package. 
+                        The client can be trained to manage the website in-house on their own or the management can be contracted to us as an agency at a pocket friendly amount. In both instance, we give you eery support you need all the way to make sure your web or app is functioning optimally and serving 
+                        the purpose to which it was developed in the first place.
+                        </p>
+                    </div>
+                </Zoom>
             </div>
 
             <div className='mission-vision'>

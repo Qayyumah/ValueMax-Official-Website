@@ -10,6 +10,7 @@
     position: absolute;
     padding: 70px 70px;
     z-index: 5;
+    
 
     @media(max-width: 1197px){
         padding: 70px 30px;
@@ -20,7 +21,11 @@
        flex-direction: row;
        justify-content: space-evenly;
        padding: 40px 0;
-
+       position: fixed;
+       top: 0;
+       z-index: 1;
+       opacity: 5;
+       background-color: #182141;
     }
 
    
@@ -84,7 +89,7 @@
     text-decoration-line: none;
     font-size: 30px;
     font-weight: 500;
-    padding-left: 30px;
+    padding-left: 10px;
 
     @media (max-width:376px){
         padding-left: 10px;
@@ -397,43 +402,54 @@
     font-size: 17px;
     line-height: 1.8;
     box-sizing: border-box;
+    margin-bottom: 30px;
 }
 
 .btns a{
-    color: #000;
+    color: #fff;
     text-decoration-line: none;
     font-size: 18px;
-    border-bottom: 1px solid #f2cc10;
+    background-color: #182141;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-top: 40px;
+}
+.btns a:hover{
+    background-color: rgb(216, 210, 210);
+    color: #f2b636;
 }
 .about-image img{
-    width: 100%;
+    width: 400px;
 }
 
 /*services*/
 .Services{
     background-image: url('tech.jpg');
     background-color: #182141;
-    padding: 0 30px;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    margin-bottom: 30px;
-    color: #fff;
+    /* opacity: .9; */
+    padding: 30px;
+    /* padding-top: 30px;
+    padding-bottom: 50px; */
+    margin-bottom: 100px;
+    /* color: #fff; */
     text-align: center;
 }
 .Services h3{
     color: #f2b636;
     font-size: 30px;
+    text-align: center;
 }
 .services-grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 70px 100px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+    padding: 30px 100px;
+
 
     @media (max-width:800px){
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        padding: 70px 60px;
+        padding: 70px 100px;
     }
 
     @media (max-width:600px){
@@ -442,22 +458,39 @@
 }
 
 .box{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2), 0px 0px 20px rgba(0,0,0,0.4);
+    padding: 50px 30px;
     width: 90%;
-    padding-top: 50px;
-    padding-bottom: 10px;
+    margin-bottom: 30px;
+    
 
     @media (max-width:800px){
-        width: 100%;
+        padding: 20px 10px;
+    }
+}
+.text-box{
+    margin-left: 20px;
+
+    @media (max-width:600px){
+        margin-left: 10px;  
     }
 }
 .box img{
-    width: 30%;
+    width: 15%;
+    height: 50px;
+    margin-top: 20px;
 }
 .box h6{
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     margin-bottom: 0;
     margin-top: 20px;
     font-weight: 600;
+    text-align: left;
 
     @media (max-width:800px){
         font-size: 1.30rem;
@@ -466,7 +499,7 @@
 .box p{
     text-align: left;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.85em;
     color: #d6d6d6;
     margin-top: 5px;
@@ -480,6 +513,8 @@
 }
 .btn{
     padding-bottom: 30px;
+   
+    
 }
 .btn a{
     background-color: transparent;
@@ -499,32 +534,32 @@
 
 /*how*/
 .how{
-    padding: 30px;
+    padding: 20px;
     margin-bottom: 100px;
 }
 .how h3{
     text-align: center;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 500;
 }
 .how-grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
     padding: 70px 100px;
     text-align: center;
 
     @media (max-width:800px){
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        padding: 70px 60px;
+        padding: 70px 100px;
     }
     @media (max-width:600px){
         padding: 70px 0px;   
     }
 }
 .how-grid h6{
-    font-size: 1.28rem;
+    font-size: 1.58rem;
     margin-bottom: 0;
     font-weight: 600;
     color: #182141;
@@ -539,13 +574,23 @@
 }
 .how-grid p{
     line-height: 1.85em;
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
     margin-top: 8px;
     font-weight: 400;
+    width: 100%;
 
     @media (max-width:800px){
         font-size: 18px;
+    }
+}
+.boxs{
+    /* width: 100%; */
+    padding: 20px 30px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2), 0px 0px 20px rgba(0,0,0,0.4);
+
+    @media (max-width: 800px){
+       padding: 20px 10px;
     }
 }
 .boxs img{
