@@ -630,7 +630,7 @@
     }
 
     @media (max-width:600px){
-
+        margin: 20px;
     }
 }
 .mission{
@@ -638,6 +638,7 @@
     height: 400px;
     margin: 0 auto;
     padding: 120px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2), 0px 0px 20px rgba(0,0,0,0.4);
 
     @media (max-width:1024px){
         /* padding: 60px; */
@@ -645,6 +646,7 @@
     }
     @media(max-width:600px){
         padding: 10px;
+       
     }
 
 }
@@ -682,6 +684,7 @@
     margin: 0 auto;
     padding: 120px;
     color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2), 0px 0px 20px rgba(0,0,0,0.4);
 
     @media (max-width:1024px){
         padding: 20px;
@@ -694,15 +697,14 @@
     color: #f2b636;
     font-size: 48px;
     /* line-height: 1.44em; */
-    letter-spacing: 1px;
     font-weight: 400;
     margin-bottom: 0;
     margin-top: 0;
 }
 .vision p{
     line-height: 1.67em;
-    font-size: 18px;
-    color: #d6d6d6;
+    font-size: 17px;
+    color: #b9b7b7;
 }
 .vision h4{
     margin-top: 100px;

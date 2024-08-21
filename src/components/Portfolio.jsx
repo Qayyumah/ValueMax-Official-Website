@@ -263,16 +263,16 @@ const Carousel = styled(Slider)`
 .slick-prev{
     margin-left: -60px;
 
-    @media (max-width:600px){
+    /* @media (max-width:600px){
         margin-left: 30px;
-    }
+    } */
 }
 .slick-next{
     margin-right: -40px;
 
-    @media (max-width:600px){
+    /* @media (max-width:600px){
         margin-right: 70px;
-    }
+    } */
 }
 
 .slick-prev::before{
