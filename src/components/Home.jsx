@@ -55,7 +55,7 @@ const Home = () => {
                             </div>
                             <CustomClose onClick={()=>setBurgerStatus(false)}/>
                         </CloseWrapper>
-                        <Fade>
+                        <Fade top>
                         <Nav>
                             <Link to='/'>Home</Link>
                             <Link to='/about'>About us</Link>
