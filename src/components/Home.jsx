@@ -452,6 +452,8 @@ const Home = () => {
             
             <Portfolio/>
 
+            <Feedback/>
+
             <div className='new-project'>
                 <p>Start a new Project?</p>
                 <Link to='/contact'>Get Started</Link>
