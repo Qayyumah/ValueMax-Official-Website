@@ -201,6 +201,8 @@ const Home = () => {
                             </div>
                         </div>
                         </Fade>
+
+                        <Fade left>
                         <div className='box'>
                             <img src='images/marketing2.png'/>
 
@@ -215,37 +217,40 @@ const Home = () => {
                                 </p>
                             </div>
                         </div>
+                        </Fade>
+                        <Fade right>
+                            <div className='box'>
+                                <img src='images/placement.png'/>
+
+                                <div className='text-box'>
+                                <h6>Tech Academy</h6>
+                                    <p>
+                                        Get 100% practical experience! 
+                                        we offer training that is personalized 
+                                        to suit your learning style, valuemax is 
+                                        here to suggests the best course
+                                        which suits & promotes your career.
+                                    </p>
+                                </div>
+                            </div>
+                        </Fade>
 
                         <Fade right>
-                        <div className='box'>
-                            <img src='images/placement.png'/>
+                            <div className='box'>
+                                <img src='images/Branding.png'/>
 
-                            <div className='text-box'>
-                            <h6>Tech Academy</h6>
-                                <p>
-                                    Get 100% practical experience! 
-                                    we offer training that is personalized 
-                                    to suit your learning style, valuemax is 
-                                    here to suggests the best course
-                                    which suits & promotes your career.
-                                </p>
+                                <div className='text-box'>
+                                    <h6>Branding & Advertisement</h6>
+                                    <p>
+                                        We offer a complete collection of 
+                                        graphic design services to showcase 
+                                        your identity. Working with our talented
+                                        designers who ably translate your thoughts and ideas 
+                                        into creative graphic designs.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
                         </Fade>
-                        <div className='box'>
-                            <img src='images/Branding.png'/>
-
-                            <div className='text-box'>
-                                <h6>Branding & Advertisement</h6>
-                                <p>
-                                    We offer a complete collection of 
-                                    graphic design services to showcase 
-                                    your identity. Working with our talented
-                                    designers who ably translate your thoughts and ideas 
-                                    into creative graphic designs.
-                                </p>
-                            </div>
-                        </div>
                         <Fade left>
                             <div className='box'>
                                 <img src='images/online.png'/>
@@ -276,7 +281,7 @@ const Home = () => {
                 <h3>How We Do It</h3>
                 <div className='how-grid'>
                     <Fade bottom>
-                        <Fade left>
+                        <Fade top>
                             <div className='boxs'>
                                 <img src='images/Discuss.png'/>
                                 <h6>Discuss your Idea with us</h6>
@@ -287,6 +292,7 @@ const Home = () => {
                             </div>
                         </Fade>
 
+                        <Fade top>
                         <div className='boxs'>
                             <img src='images/download.svg'/>
                             <h6>Proposal Presentation</h6>
@@ -295,9 +301,10 @@ const Home = () => {
                                 the cost implication and the time frame for deliverable(s). All these are documented
                             </p>
                         </div>
+                        </Fade>
                     </Fade>
 
-                    <Fade top>
+                    <Fade bottom>
                         <Fade right>
                             <div className='boxs'>
                                 <img src='images/Project.png'/>
@@ -397,46 +404,50 @@ const Home = () => {
             
             <div className='our-products'>
                 <h3>OUR PRODUCT</h3>
-                    <div className='products-grid'>
-                        <div className='product-box'>
-                            <img src='images/download (1).svg'/>
-                            <h6>Cheap Data, VTU & Online Payment</h6>
-                            <p style={{color:'grey'}}>It is called SME data plan. It is presently available on MTN, GLO,AIRTEL,9MOBILE AND SMILE network</p>
-                            <p>The idea behind it is that, we buy cheaper when buying in bulk. 
-                                With SME tarrif plan , we are able to share/resell in smaller bit to end users. 
-                                This makes the dataplan incredibly cheaper than conventional data plan.it works on any 
-                                device 24/7 and very reliable <Link to='/'>Read More...</Link>
-                            </p>
-                        </div>
+                    <Zoom>
+                        <div className='products-grid'>
+                            <div className='product-box'>
+                                <img src='images/download (1).svg'/>
+                                <h6>Cheap Data, VTU & Online Payment</h6>
+                                <p style={{color:'grey'}}>It is called SME data plan. It is presently available on MTN, GLO,AIRTEL,9MOBILE AND SMILE network</p>
+                                <p>The idea behind it is that, we buy cheaper when buying in bulk. 
+                                    With SME tarrif plan , we are able to share/resell in smaller bit to end users. 
+                                    This makes the dataplan incredibly cheaper than conventional data plan.it works on any 
+                                    device 24/7 and very reliable <Link to='/'>Read More...</Link>
+                                </p>
+                            </div>
 
-                        <div className='product-box'>
-                            <img src='images/download (2).svg'/>
-                            <h6>Membership Management System</h6>
-                            <p>
-                                Valuemax Membership Management Portal is a cloud-based 
-                                application to help organization manages her members efficiently. 
-                                Some of its features include:
-                            </p>
-                            <p>
-                                Members database creation, view and editing
-                                Bulk member creation
-                                Members small groups and departments
-                                sms or email notification/reminder 
-                                to all members or sub-group <Link to='/'>Read More...</Link> 
-                            </p>
-                        </div>
+                            <div className='product-box'>
+                                <img src='images/download (2).svg'/>
+                                <h6>Membership Management System</h6>
+                                <p>
+                                    Valuemax Membership Management Portal is a cloud-based 
+                                    application to help organization manages her members efficiently. 
+                                    Some of its features include:
+                                </p>
+                                <p>
+                                    Members database creation, view and editing
+                                    Bulk member creation
+                                    Members small groups and departments
+                                    sms or email notification/reminder 
+                                    to all members or sub-group <Link to='/'>Read More...</Link> 
+                                </p>
+                            </div>
 
-                        <div className='product-box'>
-                            <img src='images/download (3).svg'/>
-                            <h6>Domain Hosting</h6>
-                            <p>As software development company, Valuemax 
-                            always look for ways to make life easier for her clients. This made us to embark on automating the data plan so you can recharge yourself, friends and family member and even resell and make little change out of it. We implement this alongside cable TV subscription, Recharge Card Purchase and 
-                            PHCN bill payment. With a single wallet on Valuemax, <Link to='/'>Read More...</Link> </p>
+                            <div className='product-box'>
+                                <img src='images/download (3).svg'/>
+                                <h6>Domain Hosting</h6>
+                                <p>As software development company, Valuemax 
+                                always look for ways to make life easier for her clients. This made us to embark on automating the data plan so you can recharge yourself, friends and family member and even resell and make little change out of it. We implement this alongside cable TV subscription, Recharge Card Purchase and 
+                                PHCN bill payment. With a single wallet on Valuemax, <Link to='/'>Read More...</Link> </p>
+                            </div>
                         </div>
+                    </Zoom>
+                <Fade bottom>
+                    <div className='products-btn'>
+                        <Link to='/'>Contact Us</Link>
                     </div>
-                <div className='products-btn'>
-                    <Link to='/'>Contact Us</Link>
-                </div>
+                </Fade>
             </div>
             
             <Portfolio/>
