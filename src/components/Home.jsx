@@ -75,9 +75,9 @@ const Home = () => {
                 
                 <div className='image1' >
                     <div style={{
-                        backgroundImage:'url(/images/h.jpg)',
+                        backgroundImage:'url(/images/background8.jpeg)',
                         backgroundSize: 'cover',
-                        backgroundPosition:'center center',
+                        backgroundPosition:'center right',
                         margin:'0',
                         height:'750px',
                         backgroundRepeat:'no-repeat',
@@ -108,7 +108,7 @@ const Home = () => {
                 </div>
                 <div  className='image3'>
                     <div style={{
-                        backgroundImage:'url(/images/pro.jpg)',
+                        backgroundImage:'url(/images/background10.jpeg)',
                         backgroundSize: 'cover',
                         backgroundPosition:'center center',
                         height:'750px',
@@ -127,7 +127,7 @@ const Home = () => {
             
             <div className='offer'>
                 <h3>Valuemax Communication provides{" "} 
-                    <ReactTyped style={{color:'rgb(242, 182, 54)'}} strings={[
+                    <ReactTyped style={{color:'#182141'}} strings={[
                         'Web Application development',
                         'Mobile App Development',
                         'E-commerce System',
@@ -556,6 +556,10 @@ const Carousel = styled(Slider)`
         transform: rotate(-45deg);
         background-color: #fff;
         transition: all 0.2s;
+
+        @media (max-width:800px){
+            display: none;
+        }
     }
     .slick-prev::after {
         content: '';
@@ -566,6 +570,10 @@ const Carousel = styled(Slider)`
         transform: rotate(45deg);
         background-color: #fff;
         transition: all 0.2s;
+
+        @media (max-width:800px){
+            display: none;
+        }
 }
     .slick-next::before{
         content: '';
@@ -576,6 +584,10 @@ const Carousel = styled(Slider)`
         transform: rotate(45deg);
         background-color: #fff;
         transition: all 0.2s;
+
+        @media (max-width:800px){
+            display: none;
+        }
     }
 
     .slick-next::after {
@@ -587,5 +599,9 @@ const Carousel = styled(Slider)`
         transform: rotate(-45deg);
         background-color: #fff;
         transition: all 0.2s;
+
+        @media (max-width:800px){
+            display: none;
+        }
 }
 `
