@@ -10,6 +10,7 @@ const Contact = () => {
     <div>
     <Header/>
         <div className='contact-container'>
+          <h2> Get in touch with us</h2>
           <div className='contact-box'>
             <div className='contact-box1'>
               <div className='box1-header'>

@@ -88,7 +88,10 @@ const BurgerNav = styled.div`
     z-index: 1;
     opacity: 1;
     right: 0;
-    background-color: #182141;
+    background-image: url(/images/background8.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     width: 100%;
     list-style: none;
     padding: 0 0px;
