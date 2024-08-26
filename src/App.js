@@ -1,12 +1,12 @@
 
 import './App.css';
-// import Header from './components/Header';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Home from './components/Home';
-import Loader from './components/Loader';
 import { useState, useEffect } from 'react';
+import Loader from './components/Loader';
+import Home from './components/Home';
 import About from './components/About';
-// import Portfolio from './components/Portfolio';
+import Contact from './components/Contact'
+
 
 
 function App() {
@@ -29,6 +29,7 @@ function App() {
           <Routes>
             <Route exact path='/' element={<Home/>}/>
             <Route exact path='/about' element={<About/>}/>
+            <Route exact path='/contact' element={<Contact/>}/>
         </Routes>
         }
       </div>

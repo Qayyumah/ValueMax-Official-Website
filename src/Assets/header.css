@@ -3,8 +3,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #154f89;
-    padding: 80px 50px;
+    background-color: #182141;
+    padding: 50px 50px;
     min-height: min-content;
     position: fixed;
     top: 0;
@@ -12,7 +12,6 @@
     z-index: 1;
     right: 0;
    
-
 
     @media (max-width:800px){
         display: flex;
@@ -28,7 +27,7 @@
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1.62px;
-    font-size: 13px;
+    font-size: 14px;
 
     @media (max-width: 1322px){
         margin: 0 10px;
@@ -42,6 +41,9 @@
     @media (max-width: 863px){
         display: none;
     }
+}
+.links a:hover{
+    color: #f2b636;
 }
 
 .burger-nav{

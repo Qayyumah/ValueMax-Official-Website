@@ -102,7 +102,7 @@ const Home = () => {
                     <div className='text2'>
                         <h2>Let's Handle Your </h2>
                         <p>Web/Mobile App Development</p>
-                        <button><Link to='/contact'>Contact Us</Link></button>
+                        <button><Link to="/contact">Contact Us</Link></button>
                     </div>
                 </div>
                 </div>
@@ -445,7 +445,7 @@ const Home = () => {
                     </Zoom>
                 <Fade bottom>
                     <div className='products-btn'>
-                        <Link to='/'>Contact Us</Link>
+                        <Link to='/contact'>Contact Us</Link>
                     </div>
                 </Fade>
             </div>
@@ -483,7 +483,10 @@ const BurgerNav = styled.div`
     top:0;
     bottom: 0;
     right: 0;
-    background-color: #182141;
+    background-image: url(/images/background8.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     width: 100%;
     list-style: none;
     padding: 0 0px;
