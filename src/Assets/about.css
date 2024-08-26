@@ -1,0 +1,139 @@
+body{
+    min-height: 100vh;
+}
+.first-about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px;
+    margin-bottom: 50px;
+    margin-top: 180px;
+
+    @media (max-width:1024px){
+        padding: 40px;
+        margin-bottom: 100px;
+    }
+
+    @media (max-width: 800px){
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+}
+
+.about-us-text{
+    margin-left: 80px;
+
+    @media(max-width: 1024px){
+        margin-left: 0px;
+    }
+}
+
+.about-us-text h1{
+    font-size: 33px;
+    color: #182141;
+    margin-bottom: 0;
+
+
+}
+
+.about-us-text p{
+    display: block;
+    width: 85%;
+    font-size: 17px;
+    line-height: 1.8;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+
+    @media(max-width: 1024px){
+        width: 85%;
+    }
+
+
+    @media(max-width: 800px){
+        width: 100%;
+        padding: 10px 0px;
+    }
+}
+.first-about-image{
+    @media (max-width: 600px){
+        margin-right: 0px;
+    }
+}
+.first-about-image img{
+    width: 400px;
+
+ @media (max-width: 900px){
+    width: 100%;
+ }
+}
+
+.new-about-project{
+    background-color: #f2b636;
+    /* background-image: url('tech.jpg'); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 120px;
+    /* margin-bottom: 50px; */
+    margin-top: -100px;
+
+    @media (max-width:800px){
+        padding: 30px 60px;
+    }
+    @media(max-width:480px){
+        padding: 20px;
+    }
+}
+.new-about-project p{
+    color: #fff;
+    font-size: 36px;
+    letter-spacing: 2px;
+    font-weight: 600;
+
+    @media (max-width:800px){
+        font-size: 28px;
+    }
+    @media(max-width: 480px){
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+}
+.new-about-project a{
+    
+    text-decoration-line: none;
+    padding: 22px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+
+    @media (max-width:800px){
+        padding: 15px 20px;
+    }
+
+    @media (max-width:560px){
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    @media (max-width:376px){
+        padding: 10px 5px;
+        font-size: 11px;
+    }
+   
+}
+.new-about-project a:hover{
+    opacity: .9;
+    color: #fff;
+    background-color: #f2b636;
+}

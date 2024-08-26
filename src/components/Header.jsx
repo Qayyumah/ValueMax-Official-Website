@@ -18,14 +18,14 @@ const Header = () => {
                 <img src='images/logo44.png' alt='logo'/>
             </div>
             <div className='links'>
-                <a href='#'>Home</a>
-                <a href='#'>About us</a>
-                <a href='#'>Tech Academy</a>
-                <a href='#'>innovation Hub</a>
-                <a href='#'>Branding & Advert</a>
-                <a href='#'>Hosting</a>
-                <a href='#'>Blog</a>
-                <a href='#'>Contact</a>
+                <Link to='/'>Home</Link>
+                <Link to='/about'>About us</Link>
+                <Link to='/tech-academy'>Tech Academy</Link>
+                <Link to='/innovation-hub'>innovation Hub</Link>
+                <Link to='/branding'>Branding & Advert</Link>
+                <Link to='/hosting'>Hosting</Link>
+                <Link to='/blog'>Blog</Link>
+                <Link to='/contact'>Contact</Link>
             </div>
 
             <div className='burger-nav'>

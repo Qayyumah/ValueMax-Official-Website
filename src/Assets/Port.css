@@ -1,0 +1,32 @@
+.folio{
+    overflow-x: hidden;
+    padding: 120px;
+}
+.images-container{
+    /* padding: 0; */
+    background-color: #182141;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    overflow: auto;
+    height: 500px;
+    /* margin: 20px 150px; */
+    padding: 50px 50px;
+    align-items: center;
+    
+}
+.image-links img{
+    width: 90%;
+    height: 90%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2), 0px 0px 20px rgba(0,0,0,0.4);
+
+}
+.image-links{
+    position: relative;
+}
+.port-links{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 20px 20px;
+}

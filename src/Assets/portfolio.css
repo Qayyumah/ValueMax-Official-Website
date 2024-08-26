@@ -1,5 +1,7 @@
-.portfolio{
+.folio{
     margin-bottom: 20px;
+    padding: 120px;
+    overflow-x: hidden;
     padding: 120px;
 
     @media (max-width: 1024px){
@@ -16,21 +18,43 @@
 .port-head h3{
     font-size: 30px;
     color: #182040;
+    margin-bottom: 10px;
 }
 .port-head p{
     font-size: 17px;
     font-weight: 400;
     letter-spacing: 1.5px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 .port-links{
-    padding: 100px 0px;
+    /* padding: 100px 0px; */
     margin: auto;
     text-align: center;
     visibility: hidden;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    padding: 0px 0px;
 }
 .port-links h3{
     color: #f2b636;
     margin-bottom: 0;
+    font-size: 16px;
+    margin-top: 100px;
+
+    @media (max-width: 800px){
+        margin-top: 150px;
+    }
+
+    @media (max-width: 626px){
+        margin-top: 100px;
+    }
+
+    @media(max-width: 500px){
+        margin-top: 80px;
+    }
 }
 .port-links a{
     text-decoration-line: none;
@@ -38,20 +62,70 @@
     letter-spacing: 1px;
     color: #fff;
     margin-top: 0;
+
+    @media(max-width: 800px){
+        font-size: 15px;
+    }
 }
 
-.site1:hover{
-    background-color: #f2b636;
+
+.images-container{
+    /* padding: 0; */
+    background-color: #182141;
+    border-radius: 20px;
+    background-image: url(tech.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    overflow: auto;
+    height: 500px;
+    padding: 50px 50px;
+    align-items: center;
+
+    @media (max-width: 800px){
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 50px 100px;
+    }
+    
+    @media (max-width: 625px){
+        padding: 50px 50px;
+    }
+
+    @media (max-width: 480px){
+        padding: 50px 30px;
+    }
+}
+.image-links img{
+    width: 90%;
+    height: 90%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2), 0px 0px 20px rgba(0,0,0,0.4);
+
+    @media(max-width: 800px){
+        width: 100%;
+    }
+}
+.image-links{
+    cursor: pointer;
+    position: relative;
+}
+
+.image-links:hover{
+    /* background-color: #f2b636; */
 
     .port-links{
         background-color: #182040 ;
         min-height: 100%;
+        min-width: 90%;
         opacity: .9;
         visibility: visible;
+        transition: all .9s;
+
+        @media (max-width: 800px){
+           min-width: 100%;
+        }
     }
-}
-.slick-next{
-    display: none;
- 
 }
 

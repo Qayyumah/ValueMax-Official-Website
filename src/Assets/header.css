@@ -2,11 +2,15 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    background-color: #010928;
-    padding: 30px 50px;
+    justify-content: space-between;
+    background-color: #154f89;
+    padding: 80px 50px;
     min-height: min-content;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    right: 0;
    
 
 
@@ -26,7 +30,16 @@
     letter-spacing: 1.62px;
     font-size: 13px;
 
-    @media (max-width: 800px){
+    @media (max-width: 1322px){
+        margin: 0 10px;
+        font-size: 10px;
+    }
+    @media(max-width: 1197px){
+        margin: 0 10px;
+        font-size: 10px;
+    }
+
+    @media (max-width: 863px){
         display: none;
     }
 }
