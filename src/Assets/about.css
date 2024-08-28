@@ -75,13 +75,11 @@ body{
 
 .new-about-project{
     background-color: #f2b636;
-    /* background-image: url('tech.jpg'); */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 25px 120px;
-    /* margin-bottom: 50px; */
     margin-top: -100px;
 
     @media (max-width:800px){

@@ -469,7 +469,6 @@ export default Home
 
 const RightMenu = styled.div`
     display: flex;
-    /* align-items: center; */
     justify-content: flex-end;
 
 `
@@ -494,7 +493,6 @@ const BurgerNav = styled.div`
     flex-direction: column;
     text-align: start;
     transform: ${props => props.show ? 'translateX(0)' : 'translateX(-100%)'};
-    /* transition: transform cubic-bezier(0.175, 0.885, 0.32, 1.275); */
     transition: all .3s;
 
         

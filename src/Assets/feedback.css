@@ -41,7 +41,6 @@
     padding: 0px 30px;
     border-radius: 20px;
     color: #a7a5a5;
-    /* transition: all .2s; */
     animation: pulsate 1.5s ease-in-out infinite;
 }
 .clients-feedback:focus{

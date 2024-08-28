@@ -28,7 +28,6 @@
     margin-bottom: 20px;
 }
 .port-links{
-    /* padding: 100px 0px; */
     margin: auto;
     text-align: center;
     visibility: hidden;
@@ -70,7 +69,6 @@
 
 
 .images-container{
-    /* padding: 0; */
     background-color: #182141;
     border-radius: 20px;
     background-image: url(tech.jpg);
@@ -113,7 +111,6 @@
 }
 
 .image-links:hover{
-    /* background-color: #f2b636; */
 
     .port-links{
         background-color: #182040 ;
