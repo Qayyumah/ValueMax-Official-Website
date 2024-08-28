@@ -4,8 +4,24 @@ import '../Assets/contact.css'
 import Header from './Header'
 import Footer from './Footer'
 import { Fade, Zoom } from 'react-reveal'
+import { useForm } from 'react-hook-form'
+import * as yup from 'yup'
+import {yupResolver} from '@hookform/resolvers/yup'
 
 const Contact = () => {
+  const schema = yup.object().shape({
+    Name: yup.string().required('This field is required'),
+    email: yup.string().email('Email is not valid').required('Email is required!'),
+    number: yup.string().required('Phone number is required').matches(/^\d{11}$/, 'Phone number is not valid'),
+    message: yup.string()
+
+  })
+  const {register, handleSubmit, formState: {errors}} = useForm({
+    resolver: yupResolver(schema)
+  })
+  const onSubmit = ()=>{
+
+  }
   return (
     <div>
     <Header/>
@@ -43,22 +59,26 @@ const Contact = () => {
 
             <Zoom>
             <div className='contact-box2'>
-              <form className='contact-inputs'>
+              <form className='contact-inputs' onSubmit={handleSubmit(onSubmit)}>
                 <div className='contact-input1'>
                   <label for='name'>Enter your name</label>
-                  <input type='text'/>
+                  <input type='text' {...register('Name')}/>
+                  <p>{errors.Name?.message}</p>
                 </div>
                 <div className='contact-input1'>
                   <label for='name'>Enter your phone number</label>
-                  <input type='text'/>
+                  <input type='text' {...register('number')}/>
+                  <p>{errors.number?.message}</p>
                 </div>
                 <div className='contact-input1'>
                   <label for='name'>Enter your E-mail</label>
-                  <input type='text'/>
+                  <input type='text' {...register('email')}/>
+                  <p>{errors.email?.message}</p>
                 </div>
                 <div className='contact-input1'>
                   <label for='name'>Message</label>
-                  <textarea/>
+                  <textarea {...register('message')}/>
+                  <p>{errors.message?.message}</p>
                 </div>
 
                 <Fade bottom>

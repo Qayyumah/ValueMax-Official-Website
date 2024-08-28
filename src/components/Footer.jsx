@@ -19,7 +19,7 @@ const Footer = () => {
                     <Link to=''>Hosting and Domain</Link>
                     <Link to=''>Buy Data</Link>
                     <Link to=''>News</Link>
-                    <Link to=''>Contact Us</Link>
+                    <Link to='/contact'>Contact Us</Link>
                 </div>
 
                 <div className='training-link'>

@@ -1,13 +1,13 @@
 .contact-container{
     background-color: #fff;
     margin: auto;
-    padding: 20px 220px;
-    margin-top: 170px;
+    padding: 20px 20px;
+    margin-top: 150px;
     min-height: 100vh;
     margin-bottom: 0;
 
     @media(max-width: 1200px){
-        padding: 20px 100px;
+        padding: 20px 20px;
     }
 
     @media(max-width: 900px){
@@ -19,8 +19,8 @@
     }
 
     @media (max-width: 480px){
-        padding: 20px 5px;
-        margin-top: 100px;
+        padding: 20px 0px;
+        margin-top: 90px;
     }
 
     @media(max-width:321px){
@@ -41,47 +41,49 @@
     }
 }
 .contact-box{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    background-image: url(tech.jpg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
     background-size: cover;
     padding: 0px 0px;
     border-radius: 20px;
     margin-bottom: 0;
+    margin-top: 50px;
 
     @media(max-width: 900px){
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        background-image: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 }
 .contact-box1{
     background-color: #182141;
-    width: 70%;
+    width: 30%;
     min-height: min-content;
     color: #fff;
-    padding: 20px 20px;
+    padding: 10px 20px;
     margin-right: 0;
     border-radius: 20px;
 
     @media(max-width: 1200px){
-        width: 80%;
+        width: 40%;
     }
 
     @media(max-width: 900px){
         order: 2;
-        border-radius: 0;
-        width: 94.3%;
+        border-radius: 10px;
+        width: 60%;
     }
 
     @media(max-width: 768px){
-        width: 93%;
+        /* width: 93%; */
     }
     @media(max-width: 600px){
-        width: 90%;
+        width: 80%;
     }
     @media(max-width:321px){
-        width: 87%;
+        /* width: 87%; */
     }
 }
 .contact-box1 h3{
@@ -98,7 +100,7 @@
     flex-direction: row;
     align-items: center;
     text-align: left;
-    padding: 0 30px;
+    padding: 0 px;
 
     @media(max-width: 768px){
         padding: 0 10px;
@@ -108,7 +110,7 @@
     width: 20px;
 }
 .contact-address{
-    margin: 30px 0;
+    margin: 60px 0;
     font-size: 18px;
 
 }
@@ -126,7 +128,7 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    justify-content: flex-start;
+    justify-content: flex-end;
     cursor: pointer;
     margin-top: 50px;
 }
@@ -135,21 +137,26 @@
 
 }
 .contact-box2{
-    margin-left: -100px;
+    width: 30%;
     padding: 20px 30px;
+    background-image: url(tech.jpg); 
 
     @media(max-width: 1200px){
-       margin-left: -30px;
+       /* margin-left: -30px; */
+       width: 50%;
        padding: 20px 20px;
     }
 
     @media(max-width: 900px){
         order: 1;
+        width: 60%;
+        background-image: none;
         box-shadow: 0px 0px 10px rgba(0,0,0,0.2), 0px 0px 20px rgba(0,0,0,0.4);
         margin-left: 0;
-        padding: 20px 10px;
+        /* padding: 20px 10px; */
     }
     @media(max-width: 600px){
+        width: 80%;
     }
 }
 .contact-input1 label{
@@ -183,6 +190,12 @@
     padding: 0 10px;
     border: none;
     background-color: #e3e2e2;
+}
+.contact-input1 p{
+    margin-top: 0;
+    color: rgb(250, 3, 3);
+    font-size: 13px;
+    font-weight: 400;
 }
 .btn-contact {
     text-align: right;
