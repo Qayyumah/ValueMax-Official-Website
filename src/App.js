@@ -6,6 +6,7 @@ import Loader from './components/Loader';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact'
+import Training from './components/Training';
 
 
 
@@ -29,6 +30,7 @@ function App() {
           <Routes>
             <Route exact path='/' element={<Home/>}/>
             <Route exact path='/about' element={<About/>}/>
+            <Route exact path='/tech-academy' element={<Training/>}/>
             <Route exact path='/contact' element={<Contact/>}/>
         </Routes>
         }

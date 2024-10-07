@@ -1,0 +1,221 @@
+.training-section{
+    min-height: 100vh;
+    margin-top: 200px;
+}
+.training-intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 100px;
+    gap: 50px;
+    margin-bottom: 150px;
+
+    h1{
+        color: #182141;
+        font-size: 36px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    p{
+        /* width: 90%; */
+        line-height: 1.47em;
+        font-size: 17px;
+        font-weight: 400;
+        /* letter-spacing: 1px; */
+    }
+    img{
+        width: 400px;
+    }
+    a{
+        text-decoration-line: none;
+        text-transform: uppercase;
+        background-color: #f2b636;
+        padding: 10px 10px;
+        border-radius: 10px;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+}
+
+.training-details{
+
+
+    h1{
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 36px;
+        color: #f2b636;
+    }
+}
+
+.training-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    a{
+        text-decoration-line: none;
+        margin: 20px 30px;
+        color: #182141;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        border: 1px solid black;
+        padding: 10px 10px;
+    }
+}
+
+.web-program-main{
+    text-align: center;
+    margin-bottom: 50px;
+
+    h2{
+        color: #f2b636;
+        font-size: 32px;
+    }
+    p{
+        margin: 0 280px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 1.6em;
+        letter-spacing: 1px;
+        color: #d0cccc;
+    }
+}
+
+.web-program{
+    margin-top: 50px;
+
+    .module-one{
+        h2{
+            color: #f2b636;
+            text-align: left;
+            margin-left: 150px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            font-size: 23px;
+        }
+        p{
+            line-height: 1.7em;
+            font-size: 19px;
+        }
+      
+    }
+
+    .stages{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin: 0 150px;
+       
+
+        .stage-one, .stage-two, .stage-three{
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2), 0px 0px 20px rgba(0,0,0,0.4);
+            padding: 20px 20px;
+            
+            h3{
+                color: #f2b636;
+                letter-spacing: 1px;
+                font-weight: 400;
+                font-size: 23px;
+            }
+            
+            p{
+                color: #d6cfcf;
+                font-size: 18px;
+                letter-spacing: 1px;
+                font-weight: 300;
+            }
+        }
+    }
+    span{
+        text-align: right;
+        color: #f2b636;
+        font-size: 17px;
+        font-weight: 400;
+    }
+}
+.module-two{
+    margin: 40px 150px;
+    width: 55%;
+
+    p{
+        color: #e7e3e3;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 300;
+        line-height: 1.5em;
+    }
+    h2{
+        color: #f2b636;
+        text-align: left;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+}
+
+.desktop-program, .mobile-program{
+    padding-top: 180px;
+
+    p{
+        line-height: 2em;
+        font-size: 18px;
+    }
+}
+.stage-one-duration span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    label{
+        font-size: 18px;
+    }
+}
+.stage-btn{
+    margin-top: 25px;
+    text-align: right;
+    a{
+        text-decoration-line: none;
+        margin: 15px;
+        background-color: #f2b636;
+        padding: 10px;
+        color: #fff;
+        border-radius: 5px;
+        letter-spacing: 1px;
+    }
+}
+
+.backend-stage span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+
+    label{
+        margin-right: 20px;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    p{
+        font-size: 18px;
+        color: #fff;
+    }
+}
+.stage-btn-backend{
+    margin-top: 25px;
+    a{
+        text-decoration-line: none;
+        margin: 15px;
+        background-color: #f2b636;
+        padding: 10px;
+        color: #fff;
+        border-radius: 5px;
+        letter-spacing: 1px;
+    }
+}
+
